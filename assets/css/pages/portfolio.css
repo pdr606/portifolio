@@ -55,17 +55,6 @@
 .portfolio-card .card-text { margin-block: 10px 25px; }
 
 
-
-
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for large than 768px screen
- */
-
 @media (min-width: 768px) {
 
   .portfolio-card {

@@ -1,41 +1,7 @@
-/*-----------------------------------*\
-  #service.css
-\*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
- 
-/**
- * TABLE OF CONTENT
- *
- * COMPONENTS
- * Card...........................Cards style
- * Btn............................Button style
- *
- * MAIN CONTENT
- * Service........................Service style
- * Media queries..................Responsive for all devices
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #COMPONENTS
-\*-----------------------------------*/
 
 @import url('../components/card.css');
 @import url('../components/btn.css');
-
-
-
-
-
-/*-----------------------------------*\
-  #SERVICES
-\*-----------------------------------*/
 
 .service { padding-block-start: calc(var(--section-padding) + 60px); }
 
@@ -50,17 +16,6 @@
 
 .card .body-sm { color: var(--jet); }
 
-
-
-
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for large than 768px screen
- */
 
 @media (min-width: 768px) {
 

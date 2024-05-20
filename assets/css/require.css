@@ -1,37 +1,5 @@
-/*-----------------------------------*\
-  #require.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-/**
- * TABLE OF CONTENT
- *
- * Custom properties..............Global variables
- * Reset..........................Removed browser default style
- * Typography.....................Typography style
- * Reused.........................Reused classes
- * Preloader......................Preload style
- * Header.........................Header style
- * Footer.........................Footer style
- * Media queries..................Responsive for all devices
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
-
-  /**
-   * colors
-   */
 
   --maximum-yellow-red_a10: hsla(41, 99%, 64%, 0.1);
   --maximum-yellow-red_a40: hsla(41, 99%, 64%, 0.4);
@@ -47,11 +15,6 @@
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
   --jet: hsl(0, 0%, 22%);
-
-  /**
-   * typography
-   */
-
   --ff-jost: 'Jost', sans-serif;
 
   --fs-45: 4.5rem;
@@ -70,29 +33,14 @@
   --fw-500: 500;
   --fw-600: 600;
 
-  /**
-   * spacing
-   */
-
   --section-padding: 60px;
-
-  /**
-   * shadow
-   */
 
   --shadow: 0 2px 2px hsla(0, 0%, 22%, 0.08);
 
-  /**
-   * border radius
-   */
 
   --radius-50: 50px;
   --radius-pill: 100px;
   --radius-circle: 50%;
-
-  /**
-   * transition
-   */
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
@@ -100,13 +48,6 @@
 
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *,
 *::before,
@@ -177,12 +118,6 @@ body.loaded { overflow: visible; }
 
 
 
-
-
-/*-----------------------------------*\
-  #TYPOGRAPHY
-\*-----------------------------------*/
-
 .headline-lg { font-size: var(--fs-45); }
 
 .headline-md { font-size: var(--fs-38); }
@@ -205,10 +140,6 @@ body.loaded { overflow: visible; }
 
 .label-md { font-size: var(--fs-12); }
 
-/**
- * font weight
- */
-
 .headline-lg,
 .headline-md,
 .headline-sm,
@@ -222,14 +153,6 @@ body.loaded { overflow: visible; }
 }
 
 .body-lg { font-weight: var(--fw-500); }
-
-
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 16px; }
 
@@ -264,13 +187,6 @@ body.loaded { overflow: visible; }
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #PRELOADER
-\*-----------------------------------*/
-
 .preloader {
   position: fixed;
   top: 0;
@@ -299,13 +215,6 @@ body.loaded { overflow: visible; }
   100% { transform: rotate(1turn); }
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
 
 .header .btn { display: none; }
 
@@ -375,14 +284,6 @@ body.loaded { overflow: visible; }
 
 .navbar-link:is(:hover, :focus-visible, .active) { color: var(--orange-red); }
 
-
-
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
-
 .footer {
   background-color: var(--jet);
   color: var(--white_a75);
@@ -402,36 +303,14 @@ body.loaded { overflow: visible; }
 .social-link:is(:hover, :focus-visible) { color: var(--orange-red); }
 
 
-
-
-
-/*-----------------------------------*\
-  #MEDIA QUEREIS
-\*-----------------------------------*/
-
-/**
- * responsive for large than 575px screen
- */
-
 @media (min-width: 575px) {
 
   .title-lg { --fs-27: 3.5rem; }
 
 }
 
-
-
-
-
-/**
- * responsive for large than 768px screen
- */
-
 @media (min-width: 768px) {
 
-  /**
-   * TYPOGRAPHY
-   */
 
   .headline-lg { --fs-45: 6rem; }
 
@@ -441,19 +320,12 @@ body.loaded { overflow: visible; }
 
 
 
-  /**
-   * REUSED STYLE
-   */
+
 
   .section { --section-padding: 100px; }
 
   .section-title { margin-block-end: 40px; }
 
-
-
-  /**
-   * FOOTER
-   */
 
   .footer { padding-block: 25px; }
 
@@ -469,17 +341,8 @@ body.loaded { overflow: visible; }
 
 
 
-
-
-/**
- * responsive for large than 992px screen
- */
-
 @media (min-width: 992px) {
   
-  /**
-   * TYPOGRAPHY
-   */
 
   .headline-md { --fs-38: 5rem; }
 
@@ -488,18 +351,7 @@ body.loaded { overflow: visible; }
   .title-sm { --fs-22: 2.4rem; }
 
 
-
-  /**
-   * REUSED STYLE
-   */
-
   .section-title { margin-block-end: 60px; }
-
-
-
-  /**
-   * HEADER
-   */
 
   .nav-toggle-btn { display: none; }
 
@@ -539,26 +391,10 @@ body.loaded { overflow: visible; }
 }
 
 
-
-
-
-/**
- * responsive for large than 1200px screen
- */
-
 @media (min-width: 1200px) {
-
-  /**
-   * TYPOGRAPHY
-   */
 
   .headline-lg { --fs-45: 7rem; }
 
-  
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 1240px;
